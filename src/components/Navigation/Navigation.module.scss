@@ -1,0 +1,32 @@
+.navigationItems {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .navigationItem {
+    margin: 10px 0;
+    width: 100%;
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    a {
+      display: inline-block;
+      width: auto;
+      white-space: nowrap;
+      color: #333333;
+      text-decoration: none;
+      border-bottom: 4px solid transparent;
+
+      &:hover {
+        color: #40a4c8;
+      }
+
+      &:active,
+      &.active {
+        border-bottom: 4px solid #333333;
+      }
+    }
+  }
+}

@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
-/*
-import ReactDOM from 'react-dom';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-*/
+import uuid from 'uuid';
 
 import Header from '../Header/Header';
-import NavigationItems from '../Navigation/NavigationItems/NavigationItems';
+import Navigation from '../Navigation/Navigation';
 import resume from '../../assets/docs/Jon-Varner-resume.pdf';
 
 import './Layout.module.scss';
@@ -13,22 +10,48 @@ import './Layout.module.scss';
 class Layout extends Component {
   state = {
     links: [
-      { url: 'http://www.squidinsquidink.com', text: 'music' },
-      { url: resume, text: 'resume' },
-      { url: 'https://github.com/Jon-Varner/', text: 'github' },
-      { url: 'https://www.linkedin.com/in/jon-varner/', text: 'linkedin' },
-      { url: 'http://www.instagram.com/squidinsquidink', text: 'instagram' },
-      { url: 'http://www.twitter.com/jonvarner/', text: 'twitter' },
+      {
+        id: uuid(),
+        url: 'http://www.squidinsquidink.com',
+        text: 'music',
+      },
+      {
+        id: uuid(),
+        url: resume,
+        text: 'resume',
+      },
+      {
+        id: uuid(),
+        url: 'https://github.com/Jon-Varner/',
+        text: 'github',
+      },
+      {
+        id: uuid(),
+        url: 'https://www.linkedin.com/in/jon-varner/',
+        text: 'linkedin',
+      },
+      {
+        id: uuid(),
+        url: 'http://www.instagram.com/squidinsquidink',
+        text: 'instagram',
+      },
+      {
+        id: uuid(),
+        url: 'http://www.twitter.com/jonvarner/',
+        text: 'twitter',
+      },
     ],
   };
 
   render() {
+    const { links } = this.state;
+
     return (
       <article>
         <Header />
         <main>
           <nav>
-            <NavigationItems links={this.state.links} />
+            <Navigation links={links} />
           </nav>
         </main>
       </article>
