@@ -17,7 +17,7 @@ class Navigation extends Component {
   }
   componentDidMount() {
     const tl = new TimelineMax();
-    tl.staggerFrom(this.navItems, 1, { opacity: 0 }, 0.2);
+    tl.delay(2).staggerFrom(this.navItems, 1, { opacity: 0 }, 0.2);
   }
 
   render() {

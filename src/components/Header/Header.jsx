@@ -1,6 +1,6 @@
 import React from 'react';
 
-import bannerImage from '../../assets/images/puget.jpg';
+import bannerImage from '../../assets/images/puget-compressed.jpg';
 import styles from './Header.module.scss';
 
 const header = () => (
