@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
-// eslint-disable-next-line
 import { TimelineMax, TweenLite, CSSPlugin } from 'gsap/all';
 
 import classes from './Navigation.module.scss';
+
+/* The following lines are unfortunately required to get around tree shaking problems with GSAP */
+// eslint-disable-next-line
+const t = TweenLite;
+// eslint-disable-next-line
+const c = CSSPlugin;
 
 class Navigation extends Component {
   constructor(props) {
