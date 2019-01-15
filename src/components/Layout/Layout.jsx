@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import uuid from 'uuid';
 
+import Aux from '../../hoc/Auxiliary';
 import Header from '../Header/Header';
 import Navigation from '../Navigation/Navigation';
 import resume from '../../assets/docs/Jon-Varner-resume.pdf';
@@ -47,14 +48,10 @@ class Layout extends Component {
     const { links } = this.state;
 
     return (
-      <article>
+      <Aux>
         <Header />
-        <main>
-          <nav>
-            <Navigation links={links} />
-          </nav>
-        </main>
-      </article>
+        <Navigation links={links} />
+      </Aux>
     );
   }
 }

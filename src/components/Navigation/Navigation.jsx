@@ -24,7 +24,7 @@ class Navigation extends Component {
     const links = this.props.links;
 
     return (
-      <div>
+      <nav>
         <ul className={classes.navigationItems}>
           {links.map((links, index) => (
             <li
@@ -36,7 +36,7 @@ class Navigation extends Component {
             </li>
           ))}
         </ul>
-      </div>
+      </nav>
     );
   }
 }
