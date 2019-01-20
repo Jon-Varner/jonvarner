@@ -1,15 +1,21 @@
 import React from 'react';
 
+import ProgressiveImage from '../ProgressiveImage/ProgressiveImage';
+import bannerImagePreview from '../../assets/images/puget-preview.jpg';
 import bannerImage from '../../assets/images/puget-compressed.jpg';
-import styles from './Header.module.scss';
+import classes from './Header.module.scss';
 
 const header = () => (
-  <header className={styles.banner}>
-    <div className={styles.siteHeader}>
-      <h1 className={styles.title}>Jon Varner</h1>
-      <p className={styles.subtitle}>A Web developer in Seattle</p>
+  <header className={classes.banner}>
+    <div className={classes.siteHeader}>
+      <h1 className={classes.title}>Jon Varner</h1>
+      <p className={classes.subtitle}>A Web developer in Seattle</p>
     </div>
-    <img src={bannerImage} alt="banner" />
+    <ProgressiveImage
+      src={bannerImage}
+      preview={bannerImagePreview}
+      alt="banner"
+    />
   </header>
 );
 
