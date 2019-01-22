@@ -13,11 +13,6 @@ class Layout extends Component {
     links: [
       {
         id: uuid(),
-        url: 'http://www.squidinsquidink.com',
-        text: 'music',
-      },
-      {
-        id: uuid(),
         url: resume,
         text: 'resume',
       },
@@ -40,6 +35,11 @@ class Layout extends Component {
         id: uuid(),
         url: 'http://www.twitter.com/jonvarner/',
         text: 'twitter',
+      },
+      {
+        id: uuid(),
+        url: 'http://www.squidinsquidink.com',
+        text: 'music',
       },
     ],
   };
