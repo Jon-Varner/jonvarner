@@ -8,7 +8,6 @@ class ProgressiveImage extends Component {
   };
 
   componentDidMount() {
-    console.log('image loading');
     this.loadImage(this.props.src);
   }
 
@@ -16,7 +15,6 @@ class ProgressiveImage extends Component {
     const img = new Image();
     img.src = src;
     img.onload = () => {
-      console.log('image loaded');
       this.setState({
         image: img.src,
         loading: false,
