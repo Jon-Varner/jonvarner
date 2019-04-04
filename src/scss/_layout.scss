@@ -1,0 +1,20 @@
+#root {
+  display: grid;
+  grid-template-columns: 5vw 1fr 5vw;
+  grid-template-rows: 50vw 1fr;
+  column-gap: 0;
+  row-gap: 5vw;
+
+  @include breakpoint(md) {
+    grid-template-rows: 40vw 1fr;
+  }
+
+  @include breakpoint(lg) {
+    row-gap: 3vw;
+  }
+
+  @include breakpoint(xl) {
+    grid-template-rows: 30vw 1fr;
+    row-gap: 2vw;
+  }
+}

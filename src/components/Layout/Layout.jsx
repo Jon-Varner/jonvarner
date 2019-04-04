@@ -6,8 +6,6 @@ import Header from '../Header/Header';
 import Navigation from '../Navigation/Navigation';
 import resume from '../../assets/docs/Jon-Varner-resume.pdf';
 
-import './Layout.module.scss';
-
 class Layout extends Component {
   state = {
     links: [

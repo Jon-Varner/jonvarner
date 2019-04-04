@@ -1,15 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 20px;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Noto Serif', serif;
-}
+@import './scss/utils';
+@import './scss/base';
+@import './scss/layout';
+@import './scss/modules/header';
+@import './scss/modules/nav';

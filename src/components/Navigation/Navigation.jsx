@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { TimelineMax, TweenLite, CSSPlugin } from 'gsap/all';
 
-import classes from './Navigation.module.scss';
-
 /* The following lines are unfortunately required to get around tree shaking problems with GSAP */
 // eslint-disable-next-line
 const t = TweenLite;
@@ -25,10 +23,10 @@ class Navigation extends Component {
 
     return (
       <nav>
-        <ul className={classes.navigationItems}>
+        <ul className="navigation-items">
           {links.map((links, index) => (
             <li
-              className={classes.navigationItem}
+              className="navigation-item"
               key={links.id}
               ref={li => (this.navItems[index] = li)}
             >
