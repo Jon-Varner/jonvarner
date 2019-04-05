@@ -45,7 +45,7 @@ header {
   text-align: right;
   color: white;
 
-  .title {
+  h1 {
     font-family: 'neoretrodrawregular';
     font-weight: normal;
     font-size: 10vw;
@@ -55,7 +55,8 @@ header {
     }
   }
 
-  .subtitle {
+  h2 {
     font-size: 1rem;
+    font-weight: normal;
   }
 }

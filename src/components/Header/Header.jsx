@@ -5,10 +5,10 @@ import bannerImagePreview from '../../assets/images/puget-preview.jpg';
 import bannerImage from '../../assets/images/puget-compressed.jpg';
 
 const header = () => (
-  <header className="banner">
+  <header>
     <div className="site-header">
-      <h1 className="title">Jon Varner</h1>
-      <p className="subtitle">A Web developer in Seattle</p>
+      <h1>Jon Varner</h1>
+      <h2>A Web developer in Seattle</h2>
     </div>
     <ProgressiveImage
       src={bannerImage}
