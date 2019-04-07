@@ -16,7 +16,7 @@ header {
   grid-row-start: 1;
   grid-row-end: 2;
   display: grid;
-  grid-template-columns: 5vw 1fr 5vw;
+  grid-template-columns: inherit;
   grid-template-rows: 1fr 5vw;
   column-gap: 0;
   row-gap: 0;

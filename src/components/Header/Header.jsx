@@ -13,7 +13,7 @@ const header = () => (
     <ProgressiveImage
       src={bannerImage}
       preview={bannerImagePreview}
-      alt="banner"
+      alt="A photo of Lighthouse Point at Deception Pass State Park"
     />
   </header>
 );
