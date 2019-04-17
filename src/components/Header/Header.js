@@ -1,10 +1,10 @@
 import React from 'react';
 
-import ProgressiveImage from '../ProgressiveImage/ProgressiveImage';
+import { ProgressiveImage } from '../ProgressiveImage/ProgressiveImage';
 import bannerImagePreview from '../../assets/images/puget-preview.jpg';
 import bannerImage from '../../assets/images/puget-compressed.jpg';
 
-const header = () => (
+export const Header = () => (
   <header>
     <div className="site-header">
       <h1>Jon Varner</h1>
@@ -17,5 +17,3 @@ const header = () => (
     />
   </header>
 );
-
-export default header;
