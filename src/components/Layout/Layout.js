@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import uuid from 'uuid';
 
-import { Aux } from '../../hoc/Auxiliary';
 import { Header } from '../Header/Header';
 import { Navigation } from '../Navigation/Navigation';
 import resume from '../../assets/docs/Jon-Varner-resume.pdf';
@@ -41,9 +40,9 @@ export const Layout = props => {
   ];
 
   return (
-    <Aux>
+    <Fragment>
       <Header />
       <Navigation links={links} />
-    </Aux>
+    </Fragment>
   );
 };
