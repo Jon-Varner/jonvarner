@@ -8,7 +8,7 @@ export const Header = () => (
   <header>
     <div className="site-header">
       <h1>Jon Varner</h1>
-      <h2>A Web developer in Seattle</h2>
+      <h2>A Front-End Software Engineer in Seattle</h2>
     </div>
     <ProgressiveImage
       src={bannerImage}

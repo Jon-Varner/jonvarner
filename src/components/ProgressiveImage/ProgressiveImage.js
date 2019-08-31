@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { memo, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
-export const ProgressiveImage = ({ src, preview, alt }) => {
+export const ProgressiveImage = memo(({ src, preview, alt }) => {
   const [image, setImage] = useState(preview);
   const [loading, setLoading] = useState(true);
 
@@ -26,7 +26,7 @@ export const ProgressiveImage = ({ src, preview, alt }) => {
   };
 
   return <img style={styleImage(loading)} src={image} alt={alt} />;
-};
+});
 
 ProgressiveImage.propTypes = {
   preview: PropTypes.string.isRequired,

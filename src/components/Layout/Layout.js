@@ -9,18 +9,8 @@ export const Layout = props => {
   const links = [
     {
       id: uuid(),
-      url: resume,
-      text: 'resume',
-    },
-    {
-      id: uuid(),
-      url: 'https://github.com/Jon-Varner/',
-      text: 'github',
-    },
-    {
-      id: uuid(),
-      url: 'https://www.linkedin.com/in/jon-varner/',
-      text: 'linkedin',
+      url: 'http://www.squidinsquidink.com',
+      text: 'music',
     },
     {
       id: uuid(),
@@ -34,8 +24,18 @@ export const Layout = props => {
     },
     {
       id: uuid(),
-      url: 'http://www.squidinsquidink.com',
-      text: 'music',
+      url: 'https://github.com/Jon-Varner/',
+      text: 'github',
+    },
+    {
+      id: uuid(),
+      url: 'https://www.linkedin.com/in/jon-varner/',
+      text: 'linkedin',
+    },
+    {
+      id: uuid(),
+      url: resume,
+      text: 'resume',
     },
   ];
 
