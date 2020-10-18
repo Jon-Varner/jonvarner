@@ -5,7 +5,7 @@ import { Header } from './Header';
 import { Navigation } from './Navigation';
 import resume from '../assets/docs/Jon-Varner-resume.pdf';
 
-export const Layout = props => {
+export const Layout = (props) => {
   const links = [
     {
       id: uuid(),
@@ -14,13 +14,18 @@ export const Layout = props => {
     },
     {
       id: uuid(),
-      url: 'http://www.instagram.com/squidinsquidink',
-      text: 'instagram',
+      url: 'http://www.squidinsquidink.com/',
+      text: 'blog',
     },
     {
       id: uuid(),
       url: 'http://www.twitter.com/jonvarner/',
       text: 'twitter',
+    },
+    {
+      id: uuid(),
+      url: 'http://www.instagram.com/squidinsquidink',
+      text: 'instagram',
     },
     {
       id: uuid(),
