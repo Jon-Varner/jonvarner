@@ -14,7 +14,7 @@ export const Layout = (props) => {
     },
     {
       id: uuid(),
-      url: 'http://www.squidinsquidink.com/',
+      url: 'https://www.squidinsquidink.com/',
       text: 'blog',
     },
     {
